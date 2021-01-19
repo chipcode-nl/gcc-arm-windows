@@ -1,0 +1,58 @@
+{
+  "name": "gcc-arm-windows",
+  "displayName": "Arm toolchain Windows",
+  "description": "GNU Arm embedded toolchain for Windows",
+  "icon": "images/gcc-windows-128x128.png",
+  "version": "1.0.0",
+  "preview": true,
+  "publisher": "chipcode-nl",
+  "engines": {
+    "vscode": "^1.52.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "GNU Arm embedded toolchain configuration",
+      "properties": {
+        "arm-none-eabi.bin": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.0/bin",
+          "description": "The path to the GNU toolchain."
+        },
+        "arm-none-eabi.include": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.0/arm-none-eabi/include",
+          "description": "The path to the header files."
+        },
+        "arm-none-eabi.lib": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.0/arm-none-eabi/lib",
+          "description": "The path to the library files."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chipcode-nl/gcc-arm-windows.git"
+  },
+  "license": "GPL-3.0",
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.52.0"
+  }
+}
