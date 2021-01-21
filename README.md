@@ -86,6 +86,9 @@ test:
 
 ## Release Notes
 
+### Version 1.0.1
+Fixed library path 
+
 ### Version 1.0.0
 GNU Arm Embedded Toolchain
 Version 10-2020-q4-major

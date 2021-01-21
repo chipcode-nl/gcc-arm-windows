@@ -3,7 +3,7 @@
   "displayName": "Arm toolchain Windows",
   "description": "GNU Arm embedded toolchain for Windows",
   "icon": "images/gcc-windows-128x128.png",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "preview": true,
   "publisher": "chipcode-nl",
   "engines": {
@@ -22,7 +22,7 @@
             "string",
             "null"
           ],
-          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.0/bin",
+          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.1/bin",
           "description": "The path to the GNU toolchain."
         },
         "arm-none-eabi.include": {
@@ -30,7 +30,7 @@
             "string",
             "null"
           ],
-          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.0/arm-none-eabi/include",
+          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.1/arm-none-eabi/include",
           "description": "The path to the header files."
         },
         "arm-none-eabi.lib": {
@@ -38,7 +38,7 @@
             "string",
             "null"
           ],
-          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.0/arm-none-eabi/lib",
+          "default": "${env:USERPROFILE}/.vscode/extensions/chipcode-nl.gcc-arm-windows-1.0.1/lib/gcc/arm-none-eabi/10.2.1",
           "description": "The path to the library files."
         }
       }
